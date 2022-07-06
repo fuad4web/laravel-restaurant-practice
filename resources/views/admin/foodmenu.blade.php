@@ -27,8 +27,8 @@
 
             <div class="card">
                 <div class="card-body">
-                <h4 class="card-title">Different types of Food</h4>
-                <p class="card-description"> Different types of Food </p>
+                    <h4 class="card-title">Different types of Food</h4>
+                    <p class="card-description"> Different types of Food </p>
                     <form class="" action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
@@ -38,7 +38,7 @@
                         <div class="form-group">
                         <label>Image upload</label>
                             <div class="input-group col-xs-12">
-                                <input type="file" name="image" class="form-control">
+                                <input type="file" name="image" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
